@@ -1,0 +1,108 @@
+      
+.container h1 {
+	font-family: 'Raleway';
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 45px;
+}
+hr {
+	border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.thumbnail {
+	margin-bottom:6px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal-body{
+	margin-top: 150px;
+	width: 100%;
+	
+}
+
+
+.blur {
+    transform: scale(0.9);
+    opacity: 0.6;
+  	-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+.myFooter {
+	display: flex;
+  	flex-flow: row wrap;
+	 
+}
+
+footer {
+	background: #000;
+	font-family: 'Raleway', sans-serif;
+	color: rgb(0, 0, 0);
+	max-width: 100%;
+	margin-top: auto;
+}
+
+
+.footer-icons {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 25px;
+	width: 100%;
+  	align-items: center;
+  	justify-content: space-between;
+  	position: relative;
+  	margin-top: 15px;
+}
+
+.footer-bottom {
+	text-align: center;
+	color: white;
+	width: 100%;
+  	align-items: center;
+  	justify-content: space-around;
+  	position: relative;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+}
+a:visited, a:focus{
+	color: white;
+}
+
+footer a:hover {
+	color: rgba(255, 255, 255, 0.6);
+} 
+
+/* footer */
+ .footer-wrapper {
+    background: #000;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-icons a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
