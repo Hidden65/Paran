@@ -22,25 +22,60 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.images-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,3fr));
-   width: 88%;
-    grid-gap: 10px;
-    margin: auto;
-  margin-top:30px;
-  padding-bottom: 3%;
-  /* margin-left:30px ; */
-  margin-bottom:6px;
-  /* display:flex; */
-  flex-wrap: wrap;
-  justify-content: center;
-  }
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  .images-container img{
-    /* height: 50%; */
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+.images-container a {
+    flex: 0 0 calc(33.33% - 15px); /* Adjust as needed for spacing */
+    margin-bottom: 10px; /* Adjust spacing between rows */
+    text-decoration: none;
+    position: relative;
+    height: 300px; /* Set a fixed height for the container */
+    overflow: hidden;/* Ensure the image doesn't overflow */
+   
+}
+.images-container a:hover img {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+    
+}
+.images-container img {
     width: 100%;
-  }
+    height: 100%;
+    object-fit: cover; /* Cover the container without stretching the image */
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .images-container a {
+        flex: 0 0 calc(50% - 10px); /* Adjust for 2 columns on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .images-container a {
+        margin-left: 5px;
+        flex: 0 0 calc(100% - 10px); /* Adjust for single column on even smaller screens */
+    }
+}
  
 /*!
  * baguetteBox.js
