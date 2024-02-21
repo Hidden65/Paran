@@ -75,6 +75,7 @@ nav{
   .dropdown-icon:hover {
     box-shadow: 0 8px 16px rgb(0, 42, 255); 
   }
+
 a {
     text-decoration: none;
     color: #2600ff; /* Set link color */
