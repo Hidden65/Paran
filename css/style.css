@@ -66,8 +66,15 @@ nav{
 .dropdown-icon {
     width: 50px; 
     height: auto;
-    
-}
+    border: 2px solid rgba(0, 0, 0, 0.47);
+    border-radius: 50%;
+    overflow:inherit;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.719);
+    transition: box-shadow .3s ease; 
+  }
+  .dropdown-icon:hover {
+    box-shadow: 0 8px 16px rgb(0, 42, 255); 
+  }
 /* ======================================navbar================================= */
 /*========================================= About Me Section Styles========================================== */
 .about-me-section {
