@@ -22,31 +22,31 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("close-fullscreen-btn").addEventListener("click", closeFullScreen);
 
   // Add event listeners for swipe gestures on mobile devices
-  // let startX = 0;
-  // let startY = 0;
-  // let endX = 0;
-  // let endY = 0;
+   let startX = 0;
+   let startY = 0;
+   let endX = 0;
+   let endY = 0;
 
-  // document.getElementById("fullscreen-image").addEventListener("touchstart", touchStart, false);
-  // document.getElementById("fullscreen-image").addEventListener("touchmove", touchMove, false);
+   document.getElementById("fullscreen-image").addEventListener("touchstart", touchStart, false);
+   document.getElementById("fullscreen-image").addEventListener("touchmove", touchMove, false);
 
-  // function touchStart(event) {
-  //   startX = event.touches[0].clientX;
-  //   startY = event.touches[0].clientY;
-  // }
+   function touchStart(event) {
+     startX = event.touches[0].clientX;
+     startY = event.touches[0].clientY;
+   }
 
-  // function touchMove(event) {
-  //   endX = event.touches[0].clientX;
-  //   endY = event.touches[0].clientY;
-  // }
+   function touchMove(event) {
+     endX = event.touches[0].clientX;
+     endY = event.touches[0].clientY;
+   }
 
-  // document.getElementById("fullscreen-image").addEventListener("touchend", function(event) {
-  //   if (endX < startX) {
-  //     navigateNext();
-  //   } else if (endX > startX) {
-  //     navigatePrevious();
-  //   }
-  // });
+   document.getElementById("fullscreen-image").addEventListener("touchend", function(event) {
+     if (endX < startX) {
+       navigateNext();
+     } else if (endX > startX) {
+       navigatePrevious();
+     }
+   });
 
   // Navigate to the previous photo
   document.getElementById("prev-photo-btn").addEventListener("click", navigatePrevious);
