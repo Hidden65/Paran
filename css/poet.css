@@ -61,7 +61,7 @@ h1 {
     font-weight: 600;
     margin-top: -3px;
     text-align:  left;
-    line-height: 1.3em;
+    line-height: 1.6em;
   }
 
   #fullscreen-overlay {
@@ -83,6 +83,10 @@ h1 {
     font-size: 18px;
     text-align: center;
   }
+ #fullscreen-content p {
+    white-space: pre-line;
+}
+  
   #close-fullscreen-btn {
     position: absolute;
     top: 10px;
